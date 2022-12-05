@@ -1,1 +1,1 @@
-# frontend-mentor-skilled-landing-pagee
+# frontend-mentor-skilled-landing-page
