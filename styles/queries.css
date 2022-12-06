@@ -1,0 +1,22 @@
+@media (min-width: 640px) {
+  /* body {
+    overflow-x: hidden;
+  } */
+  .desktop-div {
+    position: relative;
+  }
+
+  .hero-section {
+    width: 52%;
+  }
+  img {
+    inline-size: 79%;
+    block-size: 130%;
+    object-fit: cover;
+    object-position: -8% 25%;
+    top: -18%;
+    right: -29%;
+
+    position: absolute;
+  }
+}
