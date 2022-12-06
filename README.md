@@ -7,3 +7,4 @@ problems faced: was stuck for quite a long time on why my image was not filling 
 the ids and xref to the ids have to be unique in svgs, else it will not work.
 
 this was the longest challenge so far (and still not done!), spent literally 12h, of which 8h was the hero image. trying to position it like the figma was (and will still be when i get back to it tmr), literal hell
+i should not have set overflow-x and overflow-y:hidden on the body tag, it should have been on desktop-div!!

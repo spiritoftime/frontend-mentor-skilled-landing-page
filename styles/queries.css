@@ -4,6 +4,8 @@
   /* } */
   .desktop-div {
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .hero {
     margin-bottom: 16%;
