@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --footer-color: #13183f;
+  --background-color: #ffffff;
+  --secondary-background-color: #979797;
+
+
+  /* button colors */
+  --first-button-gradient: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --gradient-hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --header-button-color: #13183f;
+  --header-button:hover:  #83869A;
+  --footer-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  --footer-gradient-hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.site-banner{
+  display:flex;
+  margin:1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.company-icon{
+  height:100%;
+  width:5rem;
+}
+.btn{
+  color:white;
+  background-color:var(--header-button-color) ;
+  border-radius: 30px;
+  padding:0.8rem 1.2rem;
+
+}
+/* hero section */
+.hero{
+  margin:1rem; 
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  /* the button here will grow because by default, flex elements would grow to fill the div */
+  /* vertical margin will not be the sum of the two margins, but the maximum  */
+}
+.hero .btn{
+  align-self: flex-start;
+  background: var(--first-button-gradient);
+  /* to use linear gradient you need to use background image or background */
+  color:white;
+  border: 1px solid var(--first-button-gradient);
+}
