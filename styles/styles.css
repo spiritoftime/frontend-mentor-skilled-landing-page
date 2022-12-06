@@ -1,3 +1,4 @@
+/* global css */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,7 +30,24 @@
 }
 body{
   font-family: 'Plus Jakarta Sans', sans-serif;
+  color:var(--secondary-background-color)
 }
+img {
+  max-inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  /* border-radius: 14px 14px 0 0; */
+}
+.btn{
+  color:white;
+  background-color:var(--header-button-color) ;
+  border-radius: 30px;
+  padding:0.8rem 1.8rem;
+  font-weight: 700;
+
+
+}
+/* banner */
 
 .site-banner{
   display:flex;
@@ -41,13 +59,7 @@ body{
   height:100%;
   width:5rem;
 }
-.btn{
-  color:white;
-  background-color:var(--header-button-color) ;
-  border-radius: 30px;
-  padding:0.8rem 1.2rem;
 
-}
 /* hero section */
 .hero{
   margin:1rem; 
@@ -57,7 +69,11 @@ body{
   /* the button here will grow because by default, flex elements would grow to fill the div */
   /* vertical margin will not be the sum of the two margins, but the maximum  */
 }
-.hero .btn{
+.main-header{
+  color:#13183F;
+  font-size: clamp(2.5rem,calc(2.5rem+0.5vw), 3.5rem);
+}
+.pink{
   align-self: flex-start;
   background: var(--first-button-gradient);
   /* to use linear gradient you need to use background image or background */
