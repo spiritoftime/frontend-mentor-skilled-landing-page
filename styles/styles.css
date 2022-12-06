@@ -9,7 +9,7 @@
   --background-color: #ffffff;
   --secondary-background-color: #979797;
 
---link-color:#F74780;
+  --link-color: #f74780;
   /* button colors */
   --first-button-gradient: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   --gradient-hover: linear-gradient(
@@ -19,7 +19,7 @@
     ),
     linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   --header-button-color: #13183f;
-  --header-button:hover:  #83869A;
+  --header-button-hover: #83869a;
   --footer-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
   --footer-gradient-hover: linear-gradient(
       0deg,
@@ -28,87 +28,144 @@
     ),
     linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }
-body{
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color:var(--secondary-background-color);
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--secondary-background-color);
 }
 /* picture{
   margin:auto;
 } */
-picture{
-  border:1px solid black;
+picture {
+  border: 1px solid black;
 }
 img {
   max-inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
-  border:1px solid green;
+  border: 1px solid green;
   /* border-radius: 14px 14px 0 0; */
 }
-p{
+p {
   font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
   line-height: 1.625;
 }
-.btn{
-  color:white;
-  background-color:var(--header-button-color) ;
+.btn {
+  color: white;
+  background-color: var(--header-button-color);
   border-radius: 30px;
-  padding:0.8rem 1.8rem;
+  padding: 0.8rem 1.8rem;
   font-weight: 700;
 }
-.icon{
-  height:100%;
+.icon {
+  height: 100%;
 }
 /* banner */
 
-.site-banner{
-  display:flex;
-  margin:1rem;
+.site-banner {
+  display: flex;
+  margin: 1rem;
   justify-content: space-between;
   align-items: center;
 }
-.company-icon{
-
-  width:5rem;
+.company-icon {
+  width: 5rem;
+}
+h2 {
+  font-size: clamp(1.5rem, 1.5rem + 0.5vw, 3rem);
+  line-height: 1.33;
 }
 
 /* hero section */
-.hero{
-  margin:1rem; 
+.hero {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
   /* the button here will grow because by default, flex elements would grow to fill the div */
   /* vertical margin will not be the sum of the two margins, but the maximum  */
 }
-.main-header{
-  color:#13183F;
+.main-header {
+  color: #13183f;
+  font-size: 2.5rem;
   font-size: clamp(2.5rem, 2.5rem + 0.5vw, 4rem);
-  
 }
-.pink{
+.pink {
   align-self: flex-start;
   background: var(--first-button-gradient);
   /* to use linear gradient you need to use background image or background */
-  color:white;
+  color: white;
   border: 1px solid var(--first-button-gradient);
 }
 
 /* courses-section div */
-.article-icon{
-  width:3.5rem;
+.article-icon {
+  width: 3.5rem;
 }
-.courses-section{
-  margin:1rem; 
+.courses-section {
+  margin: 1rem;
 }
-.course{
-  padding:1rem 0rem 1rem 1rem;
+.course {
+  padding: 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
 }
-.link{
-color:var(--link-color);
-font-weight: 700;
-text-decoration: none;
+.link {
+  color: var(--link-color);
+  font-weight: 700;
+  text-decoration: none;
 }
+.introduction-div {
+  background: var(--first-button-gradient);
+  border-radius: 14px;
+  padding: 2rem;
+  justify-content: center;
+}
+.subsection-header {
+  color: var(--background-color);
+}
+.article-header {
+  color: var(--footer-color);
+}
+
+/* footer */
+.footer {
+  display: flex;
+  padding: 2rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--footer-color);
+}
+.gradient {
+  position: relative;
+  background: var(--footer-gradient);
+  border: 1px solid var(--footer-gradient);
+  /* z-index: ; */
+}
+/* transition does not work for gradients */
+.gradient::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "Get Started";
+  position: absolute;
+  background: var(--footer-gradient-hover);
+  left: 0;
+  top: 0;
+  transition: opacity 1s ease;
+
+  opacity: 0;
+  width: 100%;
+  border-radius: 30px;
+  height: 100%;
+}
+.gradient:hover::after {
+  opacity: 1;
+  cursor: pointer;
+  /* display: flex; */
+}
+/* .gradient:hover,.gradient:active{
+  transition:0.3s;
+  cursor: pointer;
+} */
+/* transition does not work for linear-gradient */
