@@ -45,6 +45,10 @@ img {
   border:1px solid green;
   /* border-radius: 14px 14px 0 0; */
 }
+p{
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+  line-height: 1.625;
+}
 .btn{
   color:white;
   background-color:var(--header-button-color) ;
@@ -76,7 +80,8 @@ img {
 }
 .main-header{
   color:#13183F;
-  font-size: clamp(2.5rem,calc(2.5rem+0.5vw), 3.5rem);
+  font-size: clamp(2.5rem, 2.5rem + 0.5vw, 4rem);
+  
 }
 .pink{
   align-self: flex-start;
