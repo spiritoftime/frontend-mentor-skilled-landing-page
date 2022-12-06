@@ -39,10 +39,10 @@ picture {
   border: 1px solid black;
 }
 img {
-  max-inline-size: 100%;
+  inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
-  border: 1px solid green;
+  /* object-fit: cover; */
+  /* border: 1px solid green; */
   /* border-radius: 14px 14px 0 0; */
 }
 p {
