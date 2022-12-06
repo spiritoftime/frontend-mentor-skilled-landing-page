@@ -22,4 +22,11 @@
 
     position: absolute;
   }
+  .courses-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subsection-header {
+    padding-top: 18%;
+  }
 }
