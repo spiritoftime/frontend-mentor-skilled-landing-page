@@ -32,10 +32,17 @@ body{
   font-family: 'Plus Jakarta Sans', sans-serif;
   color:var(--secondary-background-color)
 }
+/* picture{
+  margin:auto;
+} */
+picture{
+  border:1px solid black;
+}
 img {
   max-inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  border:1px solid green;
   /* border-radius: 14px 14px 0 0; */
 }
 .btn{
@@ -44,8 +51,6 @@ img {
   border-radius: 30px;
   padding:0.8rem 1.8rem;
   font-weight: 700;
-
-
 }
 /* banner */
 
