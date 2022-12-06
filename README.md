@@ -5,3 +5,5 @@ query: 1. should i be using h1 and h2 for the headings? my rationale for using t
 problems faced: was stuck for quite a long time on why my image was not filling up the picture div - turns out i set max-inline-width and not inline-size to 100%
 
 the ids and xref to the ids have to be unique in svgs, else it will not work.
+
+this was the longest challenge so far (and still not done!), spent literally 12h, of which 8h was the hero image. trying to position it like the figma was (and will still be when i get back to it tmr), literal hell
