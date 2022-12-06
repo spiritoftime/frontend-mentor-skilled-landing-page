@@ -7,10 +7,12 @@
   }
   .hero {
     margin-bottom: 16%;
+    display: flex;
   }
 
   .hero-section {
     width: 52%;
+    display: flex;
   }
   img {
     inline-size: 79%;
@@ -28,5 +30,10 @@
   }
   .subsection-header {
     padding-top: 18%;
+  }
+}
+@media (min-width: 1000px) {
+  .courses-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

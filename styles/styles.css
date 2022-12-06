@@ -95,6 +95,7 @@ h2 {
   /* to use linear gradient you need to use background image or background */
   color: white;
   border: 1px solid var(--first-button-gradient);
+  position: relative;
 }
 
 /* courses-section div */
@@ -142,8 +143,14 @@ h2 {
   border: 1px solid var(--footer-gradient);
   /* z-index: ; */
 }
+/* linear-gradient for buttons */
 /* transition does not work for gradients */
+.dark {
+  position: relative;
+}
+.pink::after,
 .gradient::after {
+  /* centers the text */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,17 +160,39 @@ h2 {
   left: 0;
   top: 0;
   transition: opacity 1s ease;
-
   opacity: 0;
   width: 100%;
   border-radius: 30px;
   height: 100%;
 }
+/* why does this suddenly need a z-index?? */
+.dark::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "Get Started";
+  position: absolute;
+  background: var(--gradient-hover);
+  left: 0;
+  top: 0;
+  transition: opacity 1s ease;
+  opacity: 0;
+  width: 100%;
+  border-radius: 30px;
+  height: 100%;
+  z-index: 10;
+}
+.pink:hover::after,
+.dark:hover::after,
 .gradient:hover::after {
   opacity: 1;
   cursor: pointer;
-  /* display: flex; */
 }
+/* {
+  opacity: 1;
+  cursor: pointer;
+  /* display: flex; */
+
 /* .gradient:hover,.gradient:active{
   transition:0.3s;
   cursor: pointer;
