@@ -5,6 +5,9 @@
   .desktop-div {
     position: relative;
   }
+  .hero {
+    margin-bottom: 16%;
+  }
 
   .hero-section {
     width: 52%;
