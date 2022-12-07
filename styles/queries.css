@@ -18,12 +18,9 @@
   }
   img {
     inline-size: 79%;
-
     object-fit: cover;
-
     top: -8%;
     right: -30%;
-
     position: absolute;
   }
   .courses-section {
@@ -31,7 +28,6 @@
     grid-template-columns: repeat(2, minmax(18rem, 1fr));
     gap: 1rem;
     align-content: center;
-    align-items: self-start;
   }
   .introduction-div {
     margin: auto 0 auto 0;
