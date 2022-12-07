@@ -14,7 +14,6 @@
 
   .hero-section {
     width: 52%;
-    display: flex;
   }
   img {
     inline-size: 79%;
@@ -40,8 +39,37 @@
     padding: 12% 0%;
   }
 }
+@media (min-width: 1000px) {
+  .btn {
+    font-size: clamp(2rem, 1rem + 0.5vw, 3rem);
+  }
+  .hero-section {
+    gap: clamp(2rem, 2rem + 1vw, 4rem);
+  }
+}
 @media (min-width: 1200px) {
   .courses-section {
     grid-template-columns: repeat(3, minmax(18rem, 1fr));
+  }
+  p {
+    font-size: clamp(2rem, 2rem + 0.5vw, 5rem);
+  }
+
+  .course .link {
+    font-size: clamp(1rem, 1rem + 1vw, 4rem);
+  }
+}
+@media (min-width: 1800px) {
+  .main-header {
+    font-size: clamp(6rem, 6rem + 1.5vw, 10rem);
+  }
+}
+@media (min-width: 2100px) {
+  .site-banner {
+    padding: 3% 11% 3% 6%;
+  }
+
+  .footer {
+    padding: 3% 11% 3% 6%;
   }
 }

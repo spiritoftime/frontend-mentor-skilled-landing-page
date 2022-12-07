@@ -1,6 +1,11 @@
 # frontend-mentor-skilled-landing-page
 
-query: 1. should i be using h1 and h2 for the headings? my rationale for using them is because they convey semantic meaning, but i was unable to customise their size by using it, as i set font-size to clamp. the problem with that is the font-size will always default to the maximum (since the heading default has a very large rem, making it unresponsive as a result). should i thus be using span elements instead?
+what i learnt:
+transitioning between gradients require a pseudo element. should use background not background-color
+to hide overflow dont set it on body, but the relative container.
+to make it look like grid items are aligned, we need to align the first and last element. we can overwrite gap set on the flex container by setting margin: auto 0 0 0 on the last child of the flex container.
+
+responsive font size: we need to set the variable part to be of significance (eg. font-size:clamp(1rem, 1rem +0.1 vw, 3rem)). it will increment by very little, because eg. vw is 1000px, 0.1vw is a mere 1px! so it will only be 1rem + 1px. we need to set a sensible number, like perhaps 1vw
 
 problems faced: was stuck for quite a long time on why my image was not filling up the picture div - turns out i set max-inline-width and not inline-size to 100%
 
