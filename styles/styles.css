@@ -48,7 +48,7 @@ img {
   /* border-radius: 14px 14px 0 0; */
 }
 p {
-  font-size: clamp(1rem, 0.75rem + 1.5vw, 4rem);
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 3rem);
   line-height: 1.625;
 }
 .btn {
@@ -73,7 +73,7 @@ p {
   width: clamp(5rem, 5rem + 1vw, 10rem);
 }
 h2 {
-  font-size: clamp(1.5rem, 1.5rem + 0.5vw, 6rem);
+  font-size: clamp(1.5rem, 1.5rem + 1.5vw, 6rem);
   line-height: 1.33;
 }
 
