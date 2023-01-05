@@ -1,5 +1,5 @@
 # frontend-mentor-skilled-landing-page
-
+Deployed site link: https://spiritoftime.github.io/frontend-mentor-skilled-landing-page/
 what i learnt:
 transitioning between gradients require a pseudo element. should use background not background-color
 to hide overflow dont set it on body, but the relative container.
